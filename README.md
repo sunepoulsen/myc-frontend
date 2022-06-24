@@ -1,21 +1,6 @@
 # MyCash Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Web Frontend of the MyCash Solution. 
 
 ## Customize configuration
 
@@ -49,4 +34,27 @@ npm run test:unit
 
 ```sh
 npm run lint
+```
+
+## Update All Packages to the Latest Version
+
+Leveraging [npm-check-updates](https://www.npmjs.com/package/npm-check-updates), you can upgrade all package.json 
+dependencies to the latest version.
+
+Run `npm-check-updates` to list all version hints in package.json:
+
+```bash
+ncu
+```
+
+Run `npm-check-updates` to upgrade all version hints in package.json, allowing installation of the new major versions:
+
+```bash
+ncu -u
+```
+
+Remember to run a standard install after `package.json` has been updated:
+
+```bash
+npm install
 ```
