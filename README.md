@@ -2,6 +2,12 @@
 
 Web Frontend of the MyCash Solution. 
 
+## Source overview
+
+The structure of the code are inspired by this article:
+
+[How to define a highly scalable folder structure for your Angular project](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7)
+
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
