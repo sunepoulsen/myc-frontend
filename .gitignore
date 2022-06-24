@@ -17,5 +17,8 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+# Package manager files
+package-lock.json
+
 # Editor directories and files
 .idea
