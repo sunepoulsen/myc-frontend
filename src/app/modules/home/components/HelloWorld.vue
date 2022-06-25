@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Panel from "primevue/panel";
+
 defineProps<{
   msg: string;
 }>();
@@ -6,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <Panel header="Header">{{ msg }}</Panel>
     <h3>
       You’ve successfully created a project with
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +
